@@ -1,5 +1,6 @@
 (function (exports) {
-  'use strict';
+  'use strict'
+
   function isAnagram (s, t) {
     if (s.length !== t.length) {
       return false
@@ -13,9 +14,13 @@
       }
     }
     return true
-    //return s.split('').sort().join('') === t.split('').sort().join('')
   }
 
-  exports.isAnagram = isAnagram;
+  function isAnagram2 (s, t) {
+    return s.split('').sort().join('') === t.split('').sort().join('')
+  }
 
-})(typeof window === 'undefined' ? module.exports : window);
+  exports.isAnagram = isAnagram
+  exports.isAnagram2 = isAnagram2
+
+})(typeof window === 'undefined' ? module.exports : window)

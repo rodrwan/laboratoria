@@ -1,5 +1,5 @@
 (function (exports) {
-  'use strict';
+  'use strict'
 
   function uniqueValues (arr) {
     const response = []
@@ -12,6 +12,12 @@
     return response
   }
 
-  exports.uniqueValues = uniqueValues;
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+  function uniqueValues2 (arr) {
+    return arr.filter((value, index, self) => self.indexOf(value) === index)
+  }
 
-})(typeof window === 'undefined' ? module.exports : window);
+  exports.uniqueValues = uniqueValues
+  exports.uniqueValues2 = uniqueValues2
+
+})(typeof window === 'undefined' ? module.exports : window)

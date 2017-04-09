@@ -1,5 +1,5 @@
 (function (exports) {
-  'use strict';
+  'use strict'
 
   function isDuplicate (arr) {
     const numbers = {}
@@ -21,6 +21,6 @@
     return false
   }
 
-  exports.isDuplicate = isDuplicate;
+  exports.isDuplicate = isDuplicate
 
-})(typeof window === 'undefined' ? module.exports : window);
+})(typeof window === 'undefined' ? module.exports : window)

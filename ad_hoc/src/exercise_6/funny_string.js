@@ -1,21 +1,21 @@
 (function (exports) {
-  'use strict';
+  'use strict'
 
   function funnyWord (word) {
-    let letter = word.split('')
-    for (let i = 0; i < letter.length; i++) {
-      const dec = letter[i].charCodeAt()
+    let letters = word.split('')
+    for (let i = 0; i < letters.length; i++) {
+      const dec = letters[i].charCodeAt()
       if (i%2 !== 0) {
         if (dec >= 65 && dec <= 90) {
-          letter[i] = letter[i].toLowerCase()
+          letters[i] = letters[i].toLowerCase()
         }
       } else if (i%2 === 0) {
         if (dec >= 97 && dec <= 122) {
-          letter[i] = letter[i].toUpperCase()
+          letters[i] = letters[i].toUpperCase()
         }
       }
     }
-    return letter.join('')
+    return letters.join('')
   }
 
   function funnyString (str) {
@@ -25,6 +25,7 @@
     }).join(' ')
   }
 
-  exports.funnyString = funnyString;
+  exports.funnyWord = funnyWord
+  exports.funnyString = funnyString
 
-})(typeof window === 'undefined' ? module.exports : window);
+})(typeof window === 'undefined' ? module.exports : window)

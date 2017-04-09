@@ -1,5 +1,5 @@
 (function (exports) {
-  'use strict';
+  'use strict'
 
   function strToAsciiNum (str) {
     const response = []
@@ -15,6 +15,7 @@
   }
 
 
-  exports.strToAsciiNum = strToAsciiNum;
+  exports.strToAsciiNum = strToAsciiNum
+  exports.strToAsciiNum2 = strToAsciiNum2
 
-})(typeof window === 'undefined' ? module.exports : window);
+})(typeof window === 'undefined' ? module.exports : window)

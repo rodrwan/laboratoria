@@ -1,5 +1,5 @@
 (function (exports) {
-  'use strict';
+  'use strict'
 
   function rotate(arr, rot) {
     for (let i = 0; i < arr.length-rot; i++) {
@@ -14,6 +14,7 @@
     return arr.concat(arr1)
   }
 
-  exports.rotateArr = rotateArr;
+  exports.rotateArr = rotateArr
+  exports.rotate = rotate
 
-})(typeof window === 'undefined' ? module.exports : window);
+})(typeof window === 'undefined' ? module.exports : window)

@@ -1,5 +1,5 @@
 (function (exports) {
-  'use strict';
+  'use strict'
 
   function shuffle (arr) {
     let len = arr.length
@@ -14,6 +14,6 @@
     return arr
   }
 
-  exports.shuffle = shuffle;
+  exports.shuffle = shuffle
 
-})(typeof window === 'undefined' ? module.exports : window);
+})(typeof window === 'undefined' ? module.exports : window)

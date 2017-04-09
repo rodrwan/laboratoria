@@ -1,5 +1,5 @@
 (function (exports) {
-  'use strict';
+  'use strict'
 
   function fibonacci (nums) {
     let i = 0
@@ -19,6 +19,6 @@
     return response
   }
 
-  exports.fibonacci = fibonacci;
+  exports.fibonacci = fibonacci
 
-})(typeof window === 'undefined' ? module.exports : window);
+})(typeof window === 'undefined' ? module.exports : window)
