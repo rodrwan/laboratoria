@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test --slow 0"
   },
   "author": "Rodrigo Fuenzalida <rodrigof@laboratoria.la>",
   "license": "ISC",
