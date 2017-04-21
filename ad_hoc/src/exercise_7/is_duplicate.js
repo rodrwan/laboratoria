@@ -53,6 +53,11 @@
     return false
   }
 
+  function checkDuplicate(arrin){
+    var arrfin = new Set(arrin); 
+    return (arrin.length !== (Array.from(arrfin)).length); 
+  }
+
   exports.isDuplicate = isDuplicate
   exports.isDuplicate2 = isDuplicate2
   exports.isDuplicate3 = isDuplicate3
